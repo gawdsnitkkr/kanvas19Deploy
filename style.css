@@ -1,0 +1,173 @@
+body {
+    background: rgb(31, 29, 29);
+    margin: 0;
+    overflow: hidden;
+	width: 100%;
+	height: 100vh;
+	font-family: "Exo", sans-serif;
+	color: #fff;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.circle {
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 2em);
+    left: calc(50% - 2em);
+    background-color: white;
+    cursor: pointer;
+}
+
+#title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-51.5%, -50%);
+    width: 50%;
+    white-space: pre;
+    color: white;
+}
+
+.social-icons {
+    position: absolute;
+    top: 80%;
+    left: 2%;
+    z-index: 3;
+}
+
+.social-icon {
+    color: #fff;
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+.social-icon:hover {
+    color: rgb(247, 234, 52);
+}
+
+#corner-logo {
+    background: white;
+    /* opacity: 0.5; */
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 20px;
+    z-index: -3;
+}
+#corner-menu{
+    height: 22px;
+    width: auto;
+    margin: 9px;
+    color:black
+}
+#gawds-logo {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    height: 2.0em;
+}
+
+.close {
+    color: #e84775;
+    font-size: 2em;
+    position: absolute;
+    left: 2%;
+    display: none;
+    cursor: pointer;
+    font-weight: 900;
+    z-index: 4;
+}
+
+.event-icon {
+    width: 2em;
+    position: relative;
+    top: calc(50% - 1em);
+    left: calc(50% - 1em);
+    opacity: 0;
+}
+
+.event-details {
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 50vw;
+    height: max-content;
+    box-sizing: border-box;
+    padding: 3% 3% 3% 5%;
+    z-index: 3;
+    overflow: hidden;
+}
+
+.heading {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 200;
+    font-size: 1.8em;
+    color: #e84775;
+    font-family: Raleway;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+}
+
+.heading .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+.content {
+    font-family: 'Roboto', sans-serif;
+    color: #e84775;
+    font-size: 0.9em;
+    text-align: center;
+    justify-content: center;
+}
+
+@media (max-width: 800px) {
+    #title {
+        top: 40%;
+        width: 80vw;
+    }
+
+    .event-details {
+        width: 100vw;
+        overflow: auto;
+        padding: 3% 10%;
+    }
+
+    .heading {
+        font-size: 1.5em;
+        letter-spacing: 0.2em;
+
+    }
+
+    .content {
+        font-size: 0.8em;
+    }
+    #gawds-logo{
+        margin-right: -15px;
+        font-size: 0.8em;
+        
+    }
+    .manage{
+        margin-top: 0px;
+    }
+    
+}
