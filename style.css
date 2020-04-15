@@ -438,6 +438,28 @@ select {
     color: #0a004b;
 }
 
+.sm {
+    color: white;
+    background: #05ddb9;
+    border-radius: 5px;
+    width: 100px;
+    padding: 18px;
+    font-size: 0.8em;
+    height: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.12);
+}
+
+.sm:hover {
+    cursor: pointer;
+    width: 98px;
+    font-size: 0.7em;
+    background-color: #46f1d5;
+    height: 0px;
+}
+
 @media (max-width: 800px) {
     .container2 {
         width: 90%;

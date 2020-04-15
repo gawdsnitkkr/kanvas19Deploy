@@ -29,26 +29,29 @@ const WD = document.querySelector(".flex-1");
 const GD = document.querySelector(".flex-2");
 const SUB = document.querySelector(".flex-3");
 const gd_button = document.querySelector(".gd");
-const SUB_button = document.querySelector(".org-button");
+const SUB_button = document.querySelectorAll(".org-button");
 const events_heading = document.querySelector(".evt");
 
 window.scrollTo(0, 0);
 
-SUB_button.addEventListener('click', () => {
-    const form = document.querySelector('.form')
-    form.reset();
-    main.style.display = 'none';
-    GD.style.display = 'none';
-    WD.style.display = 'none';
-    SUB.style.display = 'block';
-    events_heading.style.display = 'none'
+SUB_button.forEach(element => {
+    element.addEventListener('click', () => {
+        const form = document.querySelector('.form')
+        form.reset();
+        main.style.display = 'none';
+        GD.style.display = 'none';
+        WD.style.display = 'none';
+        SUB.style.display = 'block';
+        events_heading.style.display = 'none'
 
-    if (window.screen.width * window.devicePixelRatio < 800) {
-        window.scrollTo(1500, 1500);
-    } else {
-        window.scrollTo(1700, 1700);
-    }
+        if (window.screen.width * window.devicePixelRatio < 800) {
+            window.scrollTo(1500, 1500);
+        } else {
+            window.scrollTo(1700, 1700);
+        }
+    })
 })
+
 wd_button.addEventListener("click", () => {
     main.style.display = "none";
     WD.style.display = "block";
@@ -112,6 +115,7 @@ const handleSubmit = () => {
     const name = document.querySelector('#name').value;
     const email = document.querySelector('#email').value;
     const phone = document.querySelector('#phone').value;
+    const slack = document.querySelector('#slack').value;
     const college = document.querySelector('#college').value;
     const category = document.querySelector('#category').value;
     const url = document.querySelector('#url').value;
@@ -128,6 +132,7 @@ const handleSubmit = () => {
         db.collection(`${category}`).doc().set({
             name,
             email,
+            slack,
             phone,
             college,
             url
