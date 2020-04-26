@@ -438,6 +438,37 @@ select {
     color: #0a004b;
 }
 
+.ak {
+    margin-bottom: 40px;
+}
+
+.win-img {
+    width: 100%;
+    text-align: center;
+}
+
+.m {
+    font-size: 1.5em !important;
+}
+
+.mt-m {
+    margin-top: 5px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.win-i {
+    width: 180px;
+    border-radius: 50%;
+}
+
+.center {
+    text-align: center;
+}
+
 .sm {
     color: white;
     background: #05ddb9;
@@ -458,6 +489,14 @@ select {
     font-size: 0.7em;
     background-color: #46f1d5;
     height: 0px;
+}
+
+.big {
+    width: 100%;
+}
+
+.mt-r {
+    margin-right: 30px;
 }
 
 @media (max-width: 800px) {
