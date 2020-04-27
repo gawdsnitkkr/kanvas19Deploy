@@ -499,7 +499,38 @@ a {
     margin-right: 30px;
 }
 
+.fle {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.m-img {
+    border-radius: 50%;
+}
+
+.mentions {
+    width: 33.33%;
+}
+
+.ic {
+    font-size: 4em !important;
+    color: #0a004b;
+    margin-bottom: 20px;
+}
+
+.txt {
+    font-size: 1.2em;
+    color: #0a004b;
+    font-weight: 300 !important;
+}
+
 @media (max-width: 800px) {
+    .mentions {
+        width: 100%;
+        margin-top: 30px;
+    }
     .container2 {
         width: 90%;
     }
